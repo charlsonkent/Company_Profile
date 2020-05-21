@@ -1,0 +1,496 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="ie8">
+    <head>
+        <meta charset="utf-8">
+        <title>JJAL Talent & Learning Center, Inc.</title>
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="{% static 'custom-font/fonts.css' %}" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
+        <!-- Bootsnav -->
+        <link rel="stylesheet" href="{% static 'css/bootsnav.css' %}">
+        <!-- Fancybox -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.fancybox.css?v=2.1.5' %}" media="screen" />
+        <!-- Custom stylesheet -->
+        <link rel="stylesheet" href="{% static 'css/custom.css' %}" />
+        <!--[if lt IE 9]>
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+		<link rel="icon" href="{% static 'images/this.png' %}"/>
+    </head>
+    <body>
+
+        <!-- Preloader -->
+<!--
+        <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                </div>
+            </div>
+        </div>
+-->
+        <!--End off Preloader -->
+
+        <!-- Header -->
+        <header>
+            <!-- Top Navbar -->
+            <div class="top_nav">
+                <div class="container">
+                    <ul class="list-inline info">
+                        <li><a href="#"><span class="fa fa-phone"></span> (+63)915-136-9415</a></li>
+                        <li><a href="#"><span class="fa fa-envelope"></span> krw.jjal@gmail.com</a></li>
+                        <li><a href="#"><span class="fa fa-clock-o"></span> Mon - Sat 9:00 - 18:00</a></li>
+                    </ul>
+                    <ul class="list-inline social_icon">
+                        <li><a href="www.facebook.com/kidsroboticsworkshop"><span class="fa fa-facebook"></span></a></li>
+                        <li><a href=""><span class="fa fa-twitter"></span></a></li>
+                        <li><a href=""><span class="fa fa-instagram"></span></a></li>
+                        <li><a href=""><span class="fa fa-google-plus"></span></a></li>
+                        <li><a href=""><span class="fa fa-youtube"></span></a></li>
+                    </ul>			
+                </div>
+            </div><!-- Top Navbar end -->
+
+            <!-- Navbar -->
+            <nav class="navbar bootsnav">
+                <!-- Top Search -->
+                <div class="top-search">
+                    <div class="container">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <!-- Atribute Navigation -->
+                    <div class="attr-nav">
+                        <ul>
+                            <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href=""><img class="logo" src="{% static 'images/thisthis.png' %}" alt=""></a>
+                    </div>
+                    <!-- Navigation -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav menu">
+                            <li><a href="">Home</a></li>                    
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#achievement">Achievements</a></li>
+                            <li><a href="#project">Projects</a></li>
+                            <li><a href="#contact_form">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>   
+            </nav><!-- Navbar end -->
+        </header><!-- Header end -->
+
+
+        <section id="home" class="home">
+            <!-- Carousel -->
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <!-- Carousel-inner -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="{% static 'images/sliderr.jpg' %}" alt="Construction">
+                        <div class="overlay">
+                            <div class="carousel-caption">
+                                <h3>JJAL Talent & Learning Center, Inc.</h3>
+                                <h1>SERVICE OFFERED</h1>
+                                <h1 class="second_heading">KIDS ROBOTICS WORKSHOP</h1>
+                                <p>Robotics Classes | Competition Training | LEGO Mindstroms</p>
+								<p>2D Animation | Arduino | Game Development</p>
+                                <a  class="btn know_btn">know more</a>
+                                <a  class="btn know_btn">view details</a>
+                            </div>					
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/Thor.jpg' %}" alt="Construction">
+                        <div class="overlay">
+                            <div class="carousel-caption">
+                                <h3>JJAL Talent & Learning Center, Inc.</h3>
+                                <h1>SERVICE OFFERED</h1>
+                                <h1 class="second_heading">Center For Pop Music Philippines</h1>
+                                <p>Voice and Stage Preformance Lesson | 10 Session/2 Hour per Session</p>
+                                <a  class="btn know_btn">know more</a>
+                                <a  class="btn know_btn">view details</a>
+                            </div>					
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/avenger.jpg' %}" alt="Construction">
+                        <div class="overlay">
+                            <div class="carousel-caption">
+                                <h3>JJAL Talent & Learning Center, Inc.</h3>
+                                <h1>SERVICE OFFERED</h1>
+                                <h1 class="second_heading">Contiuning Professional Development</h1>
+                                <p>Recognize by the Philippine Regulatory Commission|CPD Accreditation Number: 2017-54.</p>
+								<p>SEMINARS for: TEACHERS-ENGINEERS-ARCHITECTS-OTHER PROFESSION.</p>
+                                <a  class="btn know_btn">know more</a>
+                                <a  class="btn know_btn">view details</a>
+                            </div>					
+                        </div>
+                    </div>
+					<div class="item">
+                        <img src="{% static 'images/Thor.jpg' %}" alt="Construction">
+                        <div class="overlay">
+                            <div class="carousel-caption">
+                                <h3>JJAL Talent & Learning Center, Inc.</h3>
+                                <h1>SERVICE OFFERED</h1>
+                                <h1 class="second_heading">TUTORIAL CENTER</h1>
+                                <p>NEED A TUTOR?</p>
+								<p>ENGLISH | MATHEMATICS | ADVANCE LEARNING | MORE</p>
+                                <a  class="btn know_btn">know more</a>
+                                <a  class="btn know_btn">view details</a>
+                            </div>					
+                        </div>
+                    </div>
+                </div><!-- Carousel-inner end -->
+
+
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                    <span class="fa fa-angle-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div><!-- Carousel end-->
+
+        </section>
+
+
+        <!-- About -->
+        <section id="about">
+            <div class="container about_bg">
+                <div class="row">
+                    <div class="col-lg-7 col-md-6">
+                        <div class="about_content">
+                            <h2>Welcome to Our Company</h2>
+                            <h3>MISSION</h3>
+                            <p>To improve 21st century learning in the delivery of effective training and seminars provided to students and continuing education proferssionals; 
+							enhancing their knowledge and skills in STEM Education.</p>
+                            <h3>VISION</h3>
+							<p>To be known as a reputable robotics education and training provider for continuing education professionals
+							who take part in the development of young individual's creative thinking in the field of SCIENCE, TECHNOLOGY, ENGINEERING and MATHEMATICS.</p>
+                            <a  class="btn know_btn">know more</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-lg-offset-1">
+                        <div class="about_banner">
+                            <img src="{% static 'images/manman.png' %}" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- About end -->
+
+        <!-- Why us -->
+        <section id="why_us">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="head_title">
+                            <h2>WHY CHOOSE US?</h2>
+                            <p>Because were awesome, cool, extraordinary and we have kent. Because were awesome, cool, extraordinary and we have kent. Because were awesome, cool, extraordinary and we have kent.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="why_us_item">
+                            <span class="fa fa-book"></span>
+                            <h4>STEM Education</h4>
+                            <p>Do it with STEM +R Education, Do it with STEM +R Education. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="why_us_item">
+                            <span class="fa fa-futbol-o"></span>
+                            <h4>Fun Learning</h4>
+						
+                            <p>Play while studying, instead of dying to boredom</p>
+                        </div>
+					</div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="why_us_item">
+                            <span class="fa fa-group"></span>
+                            <h4>Team Effort</h4>
+                            <p>No man is an Island, No man shall live on bread alone.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="why_us_item">
+                            <span class="fa fa-line-chart"></span>
+                            <h4>Professional achievement</h4>
+                            <p>Good quality of achievement with the right amount.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Why us end -->
+
+        <!-- ACHIEVEMENTS -->
+        <section id="achievement">
+            <div class="container">
+                <h2>ACHIEVEMENTS</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="achievement_item">
+                            <img src="{% static 'images/achievement_img4.jpg' %}" alt="Our achievement" />
+                            <h3>ROBOTICS</h3>
+                            <p>Show some random pictures of the students achievements. Show some random pictures of the students achievements.</p>
+                            <a href="#achievement" class="btn know_btn">see more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="achievement_item">
+                            <img src="{% static 'images/achievement_img5.jpg' %}" alt="Our achievement" />
+                            <h3>CPD</h3>
+                            <p>Show some random pictures of seminar achievements. Show some random pictures of seminar acheivements. Show some random pictures.</p>
+                            <a href="#achievement" class="btn know_btn">see more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="achievement_item">
+                            <img src="{% static 'images/achievement_img4.jpg' %}" alt="Our achievement" />
+                            <h3>CPMP</h3>
+                            <p>Show some random pictures of the students performance. Show some random pictures of the students performance.</p>
+                            <a href="#achievement" class="btn know_btn">see more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- achievement end -->
+
+        <!-- project -->
+        <section id="project">
+            <div class="container project_area text-center">
+                <h2>Projects</h2>
+                <p>Show some randoms stuffs about the company, and some random stuff that we offer. Show some randoms stuffs about the company, and some random stuff that we offer.</p>
+
+                <div id="filters">
+                    <button class="button is-checked" data-filter="*">Show All</button>
+                    <button class="button" data-filter=".Robotics">Robotics</button>
+                    <button class="button" data-filter=".CPMP">CPMP</button>
+                    <button class="button" data-filter=".CPD">CPD</button>
+                    <button class="button" data-filter=".Tutorial">Tutorial</button>
+                </div>
+                <!-- project grid -->		
+                <div class="grid">
+                    <div class="grid-sizer"></div>
+                    <div class="grid-item grid-item--width2 grid-item--height2 JJAL">
+                        <img alt="" src="{% static 'images/title.jpg' %}" >
+                        <div class="project_hover_area">
+                            <a class="fancybox" href="{% static 'images/title.jpg' %}" data-fancybox-group="gallery" title="AI IRobot"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item Robotics">
+                        <img alt="" src="{% static 'images/project1.jpg' %}" >
+                        <div class="project_hover_area">
+                            <a class="fancybox" href="{% static 'images/project1.jpg' %}" data-fancybox-group="gallery" title="Little Inventors"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>   
+                    </div>
+
+                    <div class="grid-item Robotics">
+                        <img alt="" src="{% static 'images/project2.jpg' %}" >
+                        <div class="project_hover_area">
+                            <a class="fancybox" href="{% static 'images/project2.jpg' %}" data-fancybox-group="gallery" title="Little Robotic Engineers"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item CPD">
+                        <img alt="" src="{% static 'images/project3.jpg' %}" >
+                        <div class="project_hover_area">
+                            <a class="fancybox" href="{% static 'images/project3.jpg' %}" data-fancybox-group="gallery" title="UST Seminar"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item Robotics">
+                        <img alt="" src="{% static 'images/project4.jpg' %}" >
+                        <div class="project_hover_area">
+                            <a class="fancybox" href="{% static 'images/project4.jpg' %}" data-fancybox-group="gallery" title="Robot Technology"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+                </div><!-- project grid end -->
+            </div>
+        </section><!-- project end -->
+
+        <!-- Reviews -->
+        <section id="reviews">
+            <div class="container text-center reviews_area">
+                <h2>Reviews</h2>
+                <p>Responds of our clients and students, for the very outstanding works of the company. Responds of our clients and students, for the very outstanding works of the company.</p>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="reviews_item">
+                            <div class="reviews_content text-left">
+                                <p>Very accommodating and good quality, will order again for sure. Very accommodating and good quality, will order again for sure. Expectations met.</p>
+                            </div>
+                            <img src="{% static 'images/reviews_img3.png' %}" alt="reviews" />
+                            <p class="worker_name">Charlson Kent</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="reviews_item">
+                            <div class="reviews_content">
+                                <p>Very accommodating and good quality, will order again for sure. Very accommodating and good quality, will order again for sure. Expectations met.</p>
+                            </div>
+                            <img src="{% static 'images/reviews_img5.png' %}" alt="reviews" />
+                            <p class="worker_name">Bruce Banner</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="reviews_item">
+                            <div class="reviews_content">
+                                <p>Very accommodating and good quality, will order again for sure. Very accommodating and good quality, will order again for sure. Expectations met.</p>
+                            </div>
+                            <img src="{% static 'images/reviews_img4.png' %}" alt="reviews" />
+                            <p class="worker_name">Thor Odinson</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- reviews end -->
+
+        <!-- Contact form -->
+        <section id="contact_form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Do you have any questions?</h2>
+                        <h2 class="second_heading">Feel free to contact us!</h2>
+                    </div>
+                    <form role="form" class="form-inline text-right col-md-6" >
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" id="msg" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn submit_btn">Submit</button>
+                    </form>				
+                </div>
+            </div>
+        </section><!-- Contact form end -->
+
+        <!-- Footer -->
+        <footer>
+            <!-- Footer top -->
+            <div class="container footer_top">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-7">
+                        <div class="footer_item">
+                            <h4>About Company</h4>
+                            <img class="logo" src="{% static 'images/thisthis.png' %}" alt="JJAL Talent&LearningCenter,Inc." />
+                            <p>LET YOUR KIDS DREAM BEGIN!!!</p>
+
+                            <ul class="list-inline footer_social_icon">
+                                <li><a href="www.facebook.com"><span class="fa fa-facebook"></span></a></li>
+                                <li><a href="www.twitter.com"><span class="fa fa-twitter"></span></a></li>
+                                <li><a href="www.instagram.com"><span class="fa fa-instagram"></span></a></li>
+                                <li><a href="www.gmail.com"><span class="fa fa-google-plus"></span></a></li>
+                                <li><a href="www.youtube.com"><span class="fa fa-youtube"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-5">
+                        <div class="footer_item">
+                            <h4>Explore link</h4>
+                            <ul class="list-unstyled footer_menu">
+                                <li><a href=""><span class="fa fa-play"></span> More Achievements</a>
+                                <li><a href=""><span class="fa fa-play"></span> Meet Our Team</a>
+                                <li><a href=""><span class="fa fa-play"></span> Forum</a>
+                                <li><a href=""><span class="fa fa-play"></span> Help Center</a>
+                                <li><a href=""><span class="fa fa-play"></span> Privacy Policy</a>
+                                <li><a href=""><span class="fa fa-play"></span> Site Map</a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-7">
+                        <div class="footer_item">
+                            <h4>Latest post</h4>
+                            <ul class="list-unstyled post">
+                                <li><a href=""><span class="date">02 <small>FEB</small></span>  2nd Olongapo City Robotics Cup</a></li>
+                                <li><a href=""><span class="date">31 <small>MAY</small></span>  4th Culminating</a></li>
+                                <li><a href=""><span class="date">26 <small>AUG</small></span>  Philippines Robotics Olympiad</a></li>
+                                <li><a href=""><span class="date">20 <small>SEP</small></span>  World Robotics Olympiad</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-5">
+                        <div class="footer_item">
+                            <h4>Contact us</h4>
+                            <ul class="list-unstyled footer_contact">
+                                <li><a href=""><span class="fa fa-map-marker"></span> Retail 24, Ground Floor Lot 5, Times Square Complex, CDB, SBFZ</a></li>
+                                <li><a href=""><span class="fa fa-envelope"></span> krw.jjal@gmail.com</a></li>
+                                <li><a href=""><span class="fa fa-mobile"></span><p>0917 832 6822 <br />0905 337 2324</p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Footer top end -->
+
+            <!-- Footer bottom -->
+            <div class="footer_bottom text-center">
+                <p class="wow fadeInRight"> 
+                    <a target="_blank" href="http://kidsroboticsworkshop.com">JJAL Talent & Learning Center, Inc.</a> 
+                    2018. All Rights Reserved
+                </p>
+            </div><!-- Footer bottom end -->
+        </footer><!-- Footer end -->
+
+        <!-- JavaScript -->
+        <script src="{% static 'js/jquery-1.12.1.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+        <!-- Bootsnav js -->
+        <script src="{% static 'js/bootsnav.js' %}"></script>
+
+        <!-- JS Implementing Plugins -->
+        <script src="{% static 'js/isotope.js' %}"></script>
+        <script src="{% static 'js/isotope-active.js' %}"></script>
+        <script src="{% static 'js/jquery.fancybox.js?v=2.1.5' %}"></script>
+
+        <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>	
+</html>	
